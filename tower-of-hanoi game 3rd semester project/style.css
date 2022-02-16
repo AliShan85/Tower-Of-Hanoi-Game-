@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+}
+
+body {
+    background-color: #24272E;
+}
+
+header {
+    padding: 20px;
+    background: white;
+}
+
+
+header>h1 {
+    color: #25272E;
+    text-align: center;
+}
+.game-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.tower {
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 30px;
+    background-color: bisque;
+    border-bottom: 15px solid white;
+    border-radius: 5%;
+    transition: all 0.3s ease;
+
+}
+
+.line-in-middle {
+    padding: 0px 50px 0px 50px;
+    width: 380px;
+    height: 300px;
+    background: linear-gradient(to right,
+            transparent 0%,
+            transparent calc(50% - 0.81px),
+            rgb(255, 255, 255) calc(50% - 0.8px),
+            rgb(255, 255, 255) calc(55% + 0.25px),
+            transparent calc(50% + 21px),
+            transparent 100%);
+}
+.buttons{
+     margin-top: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.btn{
+    margin: 0px 10px 0px 10px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: none;
+}
+.disk:hover{
+    cursor: pointer;
+    border:  5px solid #EB6007;
+}
+.disk:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+#disk1 {
+    background-color: aquamarine;
+    width: 135%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk1:hover{
+    box-shadow: 0 0 10px #31b43a ;
+}
+#disk2 {
+    background-color: rgb(197, 214, 166);
+    width: 120%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk2:hover{
+    box-shadow: 0 0 10px #fcfdfc ;
+}
+#disk3 {
+    background-color: rgb(204, 124, 20);
+    width: 105%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk3:hover{
+    box-shadow: 0 0 10px #d49f0b ;
+}
+#disk4 {
+    background-color: rgb(79, 144, 218);
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk4:hover{
+    box-shadow: 0 0 10px #04d1c7 ;    
+}
+#disk5 {
+    background-color: rgb(212, 36, 17);
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk5:hover{
+    box-shadow: 0 0 10px #E00727;    
+}
+#disk6 {
+    background-color: rgb(21, 109, 119);
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk6:hover{
+    box-shadow: 0 0 10px #04d1c7 ;    
+}
+#disk7 {
+    background-color: rgb(87, 38, 22);
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+}
+#disk7:hover{
+    box-shadow: 0 0 10px #572616;    
+}
+
+

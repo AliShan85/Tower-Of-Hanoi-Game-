@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tower of Hanoi</h1>
+    </header>
+    <h1 class="game-container" style="color: white;text-align: center;">Moves: <p id="moves" style="display:inline-block; margin-left: 5px;"></p></h1>
+    <h4 style="color:white; float: right; margin-right: 50px;">Minimum Moves: <p id="minMoves" style="display:inline-block;"></p></h4>
+    <div class="game-container">
+        <div id="tower_1" class="tower line-in-middle">
+            <div id="disk1" class="disk"></div>            
+            <div id="disk2" class="disk"></div>
+            <div id="disk3" class="disk"></div>
+        </div>
+        <div id="tower_2" class="tower line-in-middle  "></div>
+        <div id="tower_3" class="tower line-in-middle "></div>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="btn1" onclick="addNewDiv()">Add New Disk</button>
+        <button class="btn" id="btn2" onclick="removeDiv()">Remove  Disk</button>
+        <button  class="btn" onclick="location.reload();">Restart</button>
+    </div>
+    
+    <script src="hanoi.js"></script>
+</body>
+</html>
